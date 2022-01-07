@@ -1,0 +1,113 @@
+.page-wrapper  {
+    display: grid;
+    place-items: center;
+    padding-top:5rem;
+    font-size:1.1rem;
+    padding-bottom : 4rem;
+
+}
+
+.staff_login_form {
+    display: grid;
+    text-align: left;
+}
+
+.staff_login_form label {
+    font-size: .9375rem;
+    line-height: .9375rem;
+    padding-top:3rem;
+    color: rgba(196, 196, 196, 1);
+
+}
+
+
+.staff_login_form input {    
+    margin-top:1rem;
+    height: 2.5rem;
+    background: rgba(252, 248, 248, 1);
+    padding-left:2rem;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    width:80vw;
+    border: 2px solid var(--primaryColor);
+    border-radius: .3125rem;
+    outline:0px solid;
+}
+
+.page-wrapper button {
+    padding:.6rem 5rem;
+    border-radius: 5px;
+    color: white;
+    background: #463157;
+    margin-top: 3rem;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    border: 0px solid;
+    width:70vw;
+}
+.page-wrapper button:active {
+    background: var(--lighterPurple);
+    color:black;
+}
+.page-wrapper div {
+    display: grid;
+    place-items: center;
+}
+.page-wrapper div span {
+    position: relative;
+    top:1rem;
+    font-weight: 700;
+    color:var(--primaryColor);
+}
+
+.empty-left{
+    display: none;
+}
+
+@media screen and (min-width: 768px) { 
+    .empty-left {
+        display: block;
+        background-color: var(--primaryColor);
+        width: 40vw;
+        height: 100vh;
+    }
+    .page-wrapper {
+        display: grid;
+        place-items: center;
+    }
+    .page-wrapper header {
+        text-align: center;
+    }
+    
+    .staff_login_container {
+        display: flex;
+        gap: 15vw;
+    }
+    .staff_login_form input {
+        width:25vw;
+        border: 2px solid rgba(70, 49, 87, 0.12);
+        border-radius: .1875rem;
+    }
+    .page-wrapper div {
+        position: relative;
+        bottom: 6.5rem;
+        
+    }
+    .page-wrapper div button {
+        padding:.5rem 2rem;
+        width:25vw;
+    }
+
+    .page-wrapper div span {
+        position: relative;
+        top:1rem;
+    }
+    .staff_login_form {
+        position: relative;
+        bottom: 4rem;
+    }
+    
+}
+

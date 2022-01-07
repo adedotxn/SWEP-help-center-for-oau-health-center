@@ -14,6 +14,11 @@ import Prescription from './Components/Student/Home/prescription';
 import StudentAppointment from './Components/Student/Appointment/appointment';
 import StudentMessages from './Components/Student/Message/message';
 import MobileStudentChat from './Components/Student/Message/mobile_chat';
+import Staff from './Components/Staff/staff';
+import StaffLogin from './Components/Staff/loginpage';
+import Dashboard from './Components/Staff/Dashboard/dashboard';
+import StaffAppointment from './Components/Staff/Appointment/appointment';
+import StaffMessages from './Components/Staff/Messages/messages';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -33,6 +38,14 @@ ReactDOM.render(
           <Route path="messages" element={<StudentMessages/>} />
           <Route path="mobile_chat" element={<MobileStudentChat/>} />
           
+          <Route path="staff" element={<Staff/>}>
+            <Route path="login" element={<StaffLogin/>} />
+          </Route>
+
+          <Route path="dashboard" element = {<Dashboard/>} />
+          <Route path="staff_appointment" element={<StaffAppointment/>} />
+          <Route path="staff_messages" element={<StaffMessages/>} />
+          {/* <Route path="staff_reshedule" */}
       </Routes>
       <Outlet/>
     </BrowserRouter>

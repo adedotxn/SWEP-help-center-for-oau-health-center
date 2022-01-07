@@ -1,0 +1,43 @@
+.card-wrapper {
+    position: absolute;
+    top:5rem;
+}
+.card-overlay {
+    backdrop-filter: blur(2px);
+    width:100vw;
+    height:90vh;
+}
+.card {
+    background-color: white;
+    height: 22rem;
+    width: 75vw;
+    border-radius: 10px;
+    border: 2px solid var(--widelyUsedGrey);
+    position: relative;
+    top:40vw;
+    left:12vw;
+    overflow-y: scroll;
+}
+.card {
+    display: grid;
+    place-items: center;
+}
+.card input{
+    margin-top: 1rem;
+    padding : 1rem 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;;
+    font-size:1.1rem;
+
+}
+
+.data-btn button {
+    background: var(--primaryColor);
+    color:white;
+    padding: .8rem 2rem;;
+    border-radius: 5px;
+    border: 0px solid;
+}
+.calender p {
+    padding:1rem;
+}

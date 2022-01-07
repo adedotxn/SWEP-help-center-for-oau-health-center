@@ -1,15 +1,16 @@
 import React from "react";
-import '../../../Styles/Student/details.css'
+
+import '../../../Styles/Staff/details.css'
 
 import forwardIcon from '../../../images/forward.svg'
 import { doctorData } from "../../../data/doctordata";
-import { studentData } from "../../../data/studentdata"
+import { studentData } from "../../../data/studentdata";
 import { Link } from "react-router-dom";
 //import { useState } from "react";
 
 
 //might have to create separate for mobile and desktop 'cause of props but i'll do that later
-const AppointmentDetails = () => {
+const StaffAppointmentDetails = () => {
     const date = "November 29, 2021"
 
     /*const [reshedule, setReshedule] = useState(false)*/
@@ -36,7 +37,7 @@ const AppointmentDetails = () => {
                                 <span>{date}</span>
                             </div>
 
-                            <Link className="link" to="/student_reshedule">
+                            <Link className="link" to="/staff_reshedule">
                                 <div className = "details-icon">
                                     <img src={forwardIcon} alt="appointment details" />
                                 </div>
@@ -49,5 +50,5 @@ const AppointmentDetails = () => {
        
      );
 }
- 
-export default AppointmentDetails;
+
+export default StaffAppointmentDetails;

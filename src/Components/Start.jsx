@@ -24,7 +24,7 @@ const Start = () => {
                     </div>
                 </Link>
 
-                <Link className  = "link" to="/staff"> 
+                <Link className  = "link" to="staff/login"> 
                     <div className="go-to">
                         <button className = "staff-btn">
                             Continue as staff

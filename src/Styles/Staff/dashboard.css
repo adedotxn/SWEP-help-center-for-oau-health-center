@@ -1,0 +1,42 @@
+
+
+.dashboard header {
+    padding : 2rem;
+    border-bottom: 2px solid black;
+}
+
+.dashboard-profile  {
+    display: flex;
+}
+.dashboard-profile>div>span {
+    background: #AE93C9;
+    padding: .5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+
+}
+
+.show {
+    display: block;
+}
+.close, .desktop-sidebar {
+    display: none;
+}
+
+@media screen and (min-width: 768px) { 
+    .dashboard {
+        display: flex;
+        overflow: hidden;
+    }
+    .dashboard>div:nth-child(2) {
+        position: relative;
+        left:22vw;
+    }
+    .dashboard header {
+        padding : 1rem;
+        border-bottom: 2px solid black;
+    }
+    .desktop-sidebar {
+        display: block;
+    }
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import '../../../Styles/Student/positive_feedback.css'
-//import spikyCircle from '../../images/spiky.svg'
-import checkmark from "../../../images/checkmark.svg"
+import checkmark from '../../../images/checkmark.svg'
 import { Link, useNavigate } from "react-router-dom";
 
 const PositiveFeedback = () => {

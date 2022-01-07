@@ -1,0 +1,53 @@
+.messages_container header {
+    padding: 1.5rem;
+    border-bottom: 2px solid black;
+}
+
+.mobile_message_content>div:nth-child(1) {
+    display: flex;
+    place-items: center;
+    margin-top:1rem;
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+.mobile_message_content>div:nth-child(1) img {
+    margin-left:4vw;
+}
+.mobile_message_content>div:nth-child(1) h3 {
+    margin-left:30vw;
+}
+.mobile_message_content>div:nth-child(2) {
+    margin-top:2rem;
+}
+.desktop_message_content {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .messages_container header {
+        padding: 1rem;
+    }
+    .messages_container {
+        display: flex;
+    }
+    .messages_container>div:nth-child(2) {
+        position: relative;
+        left:22vw;
+    }
+    .mobile_message_content {
+        display: none;
+    }
+    .message_content {
+        border-bottom: 2px solid grey;;
+    }
+    .desktop_message_content {
+        display: flex;
+        position: relative;
+        top:4rem;
+        left:2rem;
+        gap:3rem;
+    }
+
+  
+}

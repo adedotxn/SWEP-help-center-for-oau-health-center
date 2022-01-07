@@ -1,0 +1,122 @@
+.wrapper {
+    width:80vw;
+    position: relative;
+    left:10vw;
+    top:10vw;
+    border-radius: .625rem;
+    z-index: 1;;
+}
+
+
+.title {
+    background-color: black;
+    color : white;
+    padding:1rem 1.5rem;;
+    border-top-left-radius: .625rem;
+    border-top-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.pending-body,.appointment-body {
+    padding:2rem 1rem;
+    box-shadow : 0px 2px 4px rgba(160, 160, 160, 0.472);
+}
+
+.expand {
+    display: block;
+
+}
+
+.contract {
+    display: none;
+}
+
+.pending-details {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+/* APPOINTMENT  */
+
+.appointment-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment-wrapper {
+    position: relative; 
+    top:6rem;;
+    margin-bottom: 10rem;;
+}
+
+
+.appointment-details h3, .pending-details h3 {
+    font-weight: 700;
+}
+
+.appointment-details p, .pending-details p {
+    color: rgb(97, 96, 96);
+}
+.pending_calender {
+    display: none;
+}
+.desktop_pending_card, .desktop_appointment_card {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+   
+    
+    .appointment-wrapper {
+        top:5rem;
+        position: relative;
+        left:25rem;
+    }
+    .request-wrapper {
+        position: relative;
+        left:3rem;
+        top: 2rem;
+        width:35vw;
+    }
+    .left {
+        position: relative;
+        right:12rem;
+    }
+    .appointment-wrapper, .pending_calender {
+        width:25vw;
+    }
+    .pending_calender {
+        display: block;
+        height:10rem;
+        background-color: white;
+        box-shadow: 2px 2px 8px var(--widelyUsedGrey);
+        position: relative;
+        top:1rem;
+        left:25rem;
+    }
+    .pending_container {
+        display: flex;
+        margin-top:4rem;
+    }
+    .pending-card, .appointment-card {
+        display: none;
+    }
+    .desktop_pending_card, .desktop_appointment_card {
+        display: block;
+    }
+    .desktop_title {
+        background-color: var(--primaryColor);
+        color : white;
+        padding:1rem 1.5rem;;
+        border-top-left-radius: .625rem;
+        border-top-right-radius: 10px;
+        text-align: center;
+    }
+    .desktop_pending_body, .desktop_appointment_body {
+        padding:2rem 1rem;
+        box-shadow : 0px 2px 4px rgba(160, 160, 160, 0.472);
+    }
+
+}

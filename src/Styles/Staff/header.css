@@ -1,0 +1,34 @@
+
+.header>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-profile  {
+    display: flex;
+}
+.dashboard-profile>div>span {
+    background: #AE93C9;
+    padding: .5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header>div:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+        padding-left:63vw;
+    }
+    .hamburger {
+        display: none;
+    }  
+
+    .dashboard-profile>span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+
+
+}
