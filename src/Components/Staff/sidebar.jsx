@@ -61,7 +61,7 @@ const StaffSidebar = ({open, setOpen}) => {
                     </Link>
                 </div>
 
-                <div onClick = { () => setOpen(!open)} className = "overlay"></div>
+                <div onClick = {() => setOpen(!open)} className = "overlay"></div>
            </div>
 
            
