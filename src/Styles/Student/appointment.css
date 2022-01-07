@@ -1,0 +1,27 @@
+.desktop_sidebar {
+    display: none;
+}
+.student_appointment_container header {
+    border-bottom: 2px solid black;
+}
+
+@media screen and (min-width: 768px) { 
+    .desktop_sidebar {
+        display: block;
+    }
+    .student_appointment_container {
+        
+    }
+    .student_appointment_container {
+        display: flex;
+    }
+    .student_appointment_container>div:nth-child(2) {
+        position: relative;
+        left:22vw;
+    }
+    
+    .student_appointment_container main {
+        position: relative;
+        top:2rem;
+    }
+}

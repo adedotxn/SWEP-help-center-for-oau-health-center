@@ -1,0 +1,27 @@
+.desktop_sidebar {
+    display: none;
+}
+.desktop_content>header {
+    border-bottom: 2px solid black;;
+}
+
+@media screen and (min-width: 768px) { 
+    .student_home_container {
+        display: flex;
+    }
+    .desktop_sidebar {
+        display: block;
+    }
+    .desktop_content {
+        width: 80vw;
+        height:100vh;
+        overflow-y: visible;
+        position: relative;
+        left:18vw;
+    }
+
+    .desktop_content>main {
+        position: relative;
+        bottom:10rem;
+    }
+}

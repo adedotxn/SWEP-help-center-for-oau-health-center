@@ -1,0 +1,51 @@
+.headerWS>div:nth-child(1) {
+    display: block;
+}
+.headerWS {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.dashboard-profile  {
+    display: flex;
+}
+.dashboard-profile>div>span {
+    background: #AE93C9;
+    padding: .5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.symptom_search {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .headerWS>div:nth-child(1) {
+        display: none;
+    }
+ 
+
+    .symptom_search {
+        display: block;
+    }
+
+    .symptom_search input {
+        background: url("../../../images/search.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x:.5rem ;
+        background-size: 1rem;
+        padding: .7rem 2rem;
+        width:20vw;
+        border-radius: 5px;;
+        border: 1px solid rgb(160, 158, 158);
+        margin-left:6vw;
+    }
+    .dashboard-profile>span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+}

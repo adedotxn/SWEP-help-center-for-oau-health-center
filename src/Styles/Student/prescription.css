@@ -1,0 +1,75 @@
+.prescription_container {
+    background-color: var(--widelyUsedGrey);
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.prescription_card {
+    background-color: white;
+    width:80vw;
+    padding: 2rem
+}
+.prescription_details {
+    display: grid;
+    margin-top:1rem;
+}
+
+.prescription_details h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.presciption {
+    display: flex;
+    margin-top:2rem;
+}
+.presciption>div:nth-child(2) {
+    display: grid;
+    padding-left:1rem;
+}
+.dosage {
+    padding-top:.5rem;
+}
+.drug {
+    color: var(--primaryColor);
+    font-weight: 700;
+    font-size: 1.1rem;;
+}
+
+.prescription_btns {
+    display: grid;
+    place-items: center;
+    margin-top:2rem;
+}
+
+.prescription_btns button {
+    width:75vw;
+    border: 0px solid;
+    padding:1rem;
+    margin-top:1rem;
+    font-weight: 700;
+    font-size: 1.1rem;;
+    border-radius: .3125rem;
+}
+.prescription_btns>button:active {
+    transform: scale(.9);
+}
+.download {
+    background-color: var(--primaryColor);
+    color:white;
+}
+.return_home {
+    background-color: var(--widelyUsedGrey);
+}
+
+@media screen and (min-width: 768px) { 
+    .prescription_card {
+        width: 40vw;
+    }
+    .prescription_btns {
+        margin-top:4rem;
+    }
+    .prescription_btns button {
+        width:35vw;
+    }
+}

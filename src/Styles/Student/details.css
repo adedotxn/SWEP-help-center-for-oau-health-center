@@ -1,0 +1,35 @@
+.appt-details-container {
+    margin-top: 1rem;
+}
+.appt-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    justify-items: center;
+}
+.appt-details-doctor div  {
+    margin-top:2.5rem;
+}
+.appt-details-doctor span, .student_appt span {
+    color: rgb(99, 98, 98)
+}
+.appt-details-student>div {
+    margin-top: 1.3rem;
+}
+.student_appt {
+    display: flex;
+    justify-content: flex-end;
+}
+.details-icon {
+    margin-top: 1.3rem;;
+}
+
+@media screen and (min-width: 768px) {
+    .appt-details {
+        margin-left:3rem;
+        width:35vw;
+        border: 2px solid var(--widelyUsedGrey);
+        padding:.5rem;
+        border-radius: .625rem;
+    }
+}

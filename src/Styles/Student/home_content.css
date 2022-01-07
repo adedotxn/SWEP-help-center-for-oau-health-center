@@ -1,0 +1,75 @@
+.student_home_wrapper header {
+    margin-left:6vw;
+    margin-top:2rem;
+}
+
+.issues-section {
+    width:90vw;
+    margin: 0 auto;
+}
+
+.issues_wrapper {
+    padding: .5rem 1rem;
+    margin-top:2rem;
+    margin-bottom: 2rem;;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgba(196, 196, 196, 1);
+    border-radius: 10px;
+}
+.issues_wrapper:hover {
+    box-shadow : 2px 2px 8px rgba(196, 196, 196, 1);
+}
+.bullet {
+    height: .4rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 1);
+    margin-left:1rem;
+    margin-top:2rem;
+}
+.issues_wrapper div:nth-child(2) {
+    margin-left:2rem;
+    font-size: 1.1rem;;
+}
+.issues_wrapper div:nth-child(3) {
+    margin-right: 1rem;
+    margin-top:2rem;
+}
+
+.open{
+    display: block;
+}
+.close {
+    display: none;
+}
+.question_container {
+    overflow-y: hidden;
+}
+.dont_flow {
+    overflow-y: hidden;
+}
+.flow{
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) { 
+    .issues-section {
+        width:55vw;
+        margin-left: 6vw;
+        overflow-y: hidden;
+       
+    }
+    .student_home_wrapper {
+        margin-top:13rem;
+    }
+    .bullet {
+        width:.4rem;
+        position: relative;
+        bottom: 1rem;
+    }
+    .forward {
+        position: relative;
+        bottom:.5rem;
+    }
+}

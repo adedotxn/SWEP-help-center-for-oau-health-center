@@ -1,0 +1,18 @@
+.message_header {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
+    border-bottom: 1px solid black;
+}
+.message_header div:nth-child(1) {
+    display: flex;
+}
+.message_header div:nth-child(1) h3 {
+    margin-left:1rem;
+}
+
+.message_container main{
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,61 @@
+.start_wrapper {
+    margin-top:10rem;
+}
+.start_wrapper header {
+    margin-left: 3rem;
+}
+
+.go-to {
+    display: grid;
+    place-items: center;
+}
+
+.go-to button {
+ width: 80vw;
+ margin-top:3rem;
+ height: 3.75rem;
+ font-size: 1rem;
+ font-weight: 700;
+ 
+ border-radius: .625rem;;
+}
+
+.student-btn, .staff-btn:focus {
+    background: #463157;
+    color: white;
+}
+
+.staff-btn, .student-btn:focus {
+    background: white;
+    border : 5px solid #463157;
+    color: black;;
+}
+.empty-left {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .start_container {
+        display: flex;
+    }
+    .empty-left {
+        display: block;
+        background-color: var(--primaryColor);
+        width: 40vw;
+        height: 100vh;
+    }
+    .go-to button {
+        width: 30vw;
+    }
+    .start_wrapper {
+        margin-top:4rem;
+        margin-left:5vw;
+    }
+    .start_wrapper header {
+        margin-left: 0rem;
+        text-align: left;
+    }
+   
+}

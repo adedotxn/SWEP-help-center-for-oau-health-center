@@ -1,0 +1,86 @@
+.login_wrapper {
+    display: grid;
+    place-items: center;
+    padding-top:2rem;
+}
+ .login_wrapper header {
+     text-align: center;
+ }
+
+.student_login_form {
+    display: grid;
+    gap: 1rem;
+    margin-top:4rem;
+}
+.student_login_form input {
+    border: 2px solid rgba(224, 224, 224, 1);
+    padding: 1.3rem 1rem;;
+    background: rgba(252, 248, 248, 1);
+    width:80vw;
+    border-radius: .3125rem;
+    color: black;
+}
+
+.student_login_footer {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+    
+}
+
+.student_login_footer button {
+    background-color: var(--primaryColor);
+    width:80vw;
+    color: white;
+    padding: 1rem 2rem;
+    border: 0px solid;
+    font-size: 1.1rem;;
+    margin-bottom: 2rem;;
+}
+.student_login_footer span{
+    text-align: center;
+    color:var(--primaryColor);
+    font-weight: 700;
+    margin-bottom:-3rem;
+}
+
+
+.empty-left{
+    display: none;
+}
+
+@media screen and (min-width: 768px) { 
+    .empty-left {
+        display: block;
+        background-color: var(--primaryColor);
+        width: 40vw;
+        height: 100vh;
+    }
+    .student_login_container {
+        display: flex;
+    }
+    .student_login_form {
+        display: grid;
+        gap: 1rem;
+        margin-top: -5rem;;
+    }
+    .student_login_form input {
+        width: 30vw;
+        height: 1.4375rem;  
+        padding: .7rem 1rem  
+    }
+    .student_login_footer {
+        display: grid;
+        place-items: center;
+        margin-top: -4rem;;
+        
+    }
+    .student_login_footer button {
+        width: 30vw;
+        margin-bottom: 1rem;;
+    }
+    .login_wrapper {
+        padding-top: 0rem;;
+        margin-left:10vw;
+    }
+}

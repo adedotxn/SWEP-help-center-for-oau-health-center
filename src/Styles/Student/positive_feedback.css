@@ -1,0 +1,67 @@
+.feedback_container {
+    display: grid;
+    place-items: center;
+    background-color: var(--widelyUsedGrey);
+    height:100vh;
+    width:100vw;
+}
+.spiky img {
+    
+    
+}
+.spiky {
+    background: url("../../images/spiky.svg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height:3rem;
+    width:3rem;
+}
+
+.feedback_card {
+    background-color: white;
+    width:75vw;
+    border-radius: .3125rem;
+    padding: 2rem;
+}
+.feedback_text{
+    display: grid;
+    place-items: center;
+}
+.feedback_text p{
+    padding: 0rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;;
+    line-height: 1.875rem;
+}
+.feedback_btn{
+    display: grid;
+    place-items: center;
+}
+.feedback_btn button {
+    width:65vw;
+    border: 0px solid;
+    padding:1rem;
+    margin-top:1rem;
+    font-weight: 700;
+    font-size: 1.1rem;;
+    border-radius: .3125rem;
+}
+.feedback_btn>button:active {
+    transform: scale(.9);
+}
+.view_pres {
+    background-color: var(--primaryColor);
+    color:white;
+}
+.return {
+    background-color: var(--widelyUsedGrey);
+    color:black;
+}
+
+@media screen and (min-width: 768px) { 
+    .feedback_card {
+        width:35vw;
+    }.feedback_btn button {
+        width: 30vw;
+    }
+}
