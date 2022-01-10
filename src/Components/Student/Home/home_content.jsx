@@ -3,13 +3,18 @@ import {commonIssues} from '../../../data/commonissues.js'
 import '../../../Styles/Student/home_content.css'
 import forward from '../../../images/forward-2.svg'
 import { Link } from "react-router-dom";
+import bullet from '../../../images/ellipse.svg'
 
 function HomeContent() {
+
+
 
     const issues = commonIssues.map((issue) => (
         <Link className="link" to = "/questions" key={issue.id}>
             <div className="issues_wrapper" >
-                <div className="bullet"></div>
+                <div className="bullet">
+                    <img src={bullet} alt="" />
+                </div>
                 
                 <div>
                     <p> {issue.issue} </p>
