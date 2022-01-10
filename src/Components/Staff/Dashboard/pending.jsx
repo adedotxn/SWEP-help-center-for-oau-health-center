@@ -4,11 +4,15 @@ import expand from '../../../images/expand-icon.svg'
 import contract from '../../../images/contract-icon.svg'
 import { doctorData } from "../../../data/doctordata"
 import { studentData } from "../../../data/studentdata";
+import Calendar from "react-calendar";
+import 'react-calendar/dist/Calendar.css'
 
 
 const Pending = () => {
 
     const date = new Date()
+
+    const [value, onChange] = useState(date);
 
     //ideally this should be the time message was dent/appointment was made
     const time = date.getHours() + ':' + date.getUTCMinutes() 
@@ -94,14 +98,17 @@ const Pending = () => {
         
         <div className="left">
             <div className="pending_calender">
-
+            <Calendar 
+                    onChange={onChange}
+                    value = {value}
+                />
             </div>
 
             {/* MY Appointments card */}
             <div className = "wrapper appointment-wrapper">
                 <div className = "appointment-card">
                     <div className = "title" onClick = {() => setExpandApp(!expandAppointments)}>
-                        <span>My appointments</span>
+                        <span>My appointments <h2>adrety</h2></span>
 
                         {expandAppointments ?
                             <img src={contract} alt="close" 

@@ -1,0 +1,91 @@
+.staff_schedule_container {
+    background-color: var(--widelyUsedGrey);
+    height:100vh;
+    overflow-y: hidden;
+}
+.staff_schedule_card_wrapper {
+    backdrop-filter: blur(100vw);
+}
+.staff_schedule_wrapper>div {
+    display: grid;
+
+}
+.staff_schedule_wrapper>div:nth-child(1)  {
+    padding:1rem;
+}
+.staff_schedule_wrapper>div:nth-child(1) img{
+    background-color: white;
+    padding:.5rem;
+    border-radius: 50%;
+    height: 1.2rem;
+    width:1.2rem;
+   
+}
+
+.staff_schedule_card {
+    margin-top: 20vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    padding:2rem;
+    width:70vw;
+    margin: 15vh auto;
+    border-radius: 0.75rem;
+}
+.staff_schedule_card_wrapper {
+    background-color: white;
+    display: grid;
+    text-align: center;
+}
+.staff_schedule_card_wrapper>span {
+    padding-top:.8rem;
+    font-size: 1.2rem;
+}
+
+
+.schedule-ctas {
+    display: grid;
+    margin-top: 1rem;
+}
+.reshedule-btn {
+    background-color: var(--primaryColor);
+    color: white
+}
+.cancel_appt {
+    background-color: var(--widelyUsedGrey);
+}
+.cancel_appt:active, .reshedule-btn:active {
+    transform: scale(.95);
+}
+.reshedule-btn, .cancel_appt {
+    width: 70vw;
+    padding: 1rem ;
+    font-size:1.1rem;
+    line-height: 1.5625rem;
+    border: 0px solid;
+    margin-top:1.5rem;
+    border-radius: .1875rem;
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.cancel_appt_container, .reshedule_appt_container {
+    position: relative;
+    bottom:80vh;
+}
+
+@media screen and (min-width: 768px) {
+    .staff_schedule_card {
+        width: 35vw;
+    }
+    .reshedule-btn, .cancel_appt {
+        width: 30vw;
+    }
+    .staff_schedule_wrapper>div:nth-child(1) {
+        padding: 1.5rem 6rem;
+    }
+}

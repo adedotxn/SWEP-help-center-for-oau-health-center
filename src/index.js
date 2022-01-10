@@ -19,7 +19,7 @@ import Dashboard from './Components/Staff/Dashboard/dashboard';
 import StaffAppointment from './Components/Staff/Appointment/appointment';
 import StaffMessages from './Components/Staff/Messages/messages';
 import StaffLogin from './Components/Staff/loginpage';
-import StudentSignup from './Components/Student/signup-page';
+import StaffSchedule from './Components/Staff/Appointment/schedule';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -30,8 +30,7 @@ ReactDOM.render(
             
             
           </Route>
-          <Route path="signup" element={<StudentSignup/>}/>
-          <Route path="login" element={<StudentLogin/>} />
+          <Route path="studentlogin" element={<StudentLogin/>} />
           <Route path="home" element={<StudentHome/>}/>
           <Route path="questions" element={<Questions/>} />
           <Route path="positive-feedback" element={<PositiveFeedback/>} />
@@ -41,13 +40,13 @@ ReactDOM.render(
           <Route path="mobile_chat" element={<MobileStudentChat/>} />
           
           <Route path="staff" element={<Staff/>}>
-            <Route path="login" element={<StaffLogin/>} />
+            
           </Route>
-
+          <Route path="stafflogin" element={<StaffLogin/>} />
           <Route path="dashboard" element = {<Dashboard/>} />
           <Route path="staff_appointment" element={<StaffAppointment/>} />
           <Route path="staff_messages" element={<StaffMessages/>} />
-          {/* <Route path="staff_reshedule" */}
+           <Route path="staff_reshedule" element={<StaffSchedule/>}/>
       </Routes>
       <Outlet/>
     </BrowserRouter>

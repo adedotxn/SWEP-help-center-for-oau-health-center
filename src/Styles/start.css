@@ -16,10 +16,12 @@
  height: 3.75rem;
  font-size: 1rem;
  font-weight: 700;
- 
  border-radius: .625rem;;
 }
 
+.student-btn {
+    border: 0px solid;
+}
 .student-btn, .staff-btn:focus {
     background: #463157;
     color: white;

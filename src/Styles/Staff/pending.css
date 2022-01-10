@@ -70,7 +70,7 @@
    
     
     .appointment-wrapper {
-        top:5rem;
+        top:14rem;
         position: relative;
         left:25rem;
     }
@@ -90,8 +90,6 @@
     .pending_calender {
         display: block;
         height:10rem;
-        background-color: white;
-        box-shadow: 2px 2px 8px var(--widelyUsedGrey);
         position: relative;
         top:1rem;
         left:25rem;
@@ -116,7 +114,11 @@
     }
     .desktop_pending_body, .desktop_appointment_body {
         padding:2rem 1rem;
-        box-shadow : 0px 2px 4px rgba(160, 160, 160, 0.472);
+        border-bottom: 2px solid var(--widelyUsedGrey);
+        border-left :2px solid var(--widelyUsedGrey) ;
+        border-right :2px solid var(--widelyUsedGrey) ;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
 }

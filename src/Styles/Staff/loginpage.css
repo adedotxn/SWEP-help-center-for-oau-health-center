@@ -4,7 +4,6 @@
     padding-top:5rem;
     font-size:1.1rem;
     padding-bottom : 4rem;
-
 }
 
 .staff_login_form {
@@ -54,6 +53,7 @@
 .page-wrapper div {
     display: grid;
     place-items: center;
+    margin-top:3rem;
 }
 .page-wrapper div span {
     position: relative;

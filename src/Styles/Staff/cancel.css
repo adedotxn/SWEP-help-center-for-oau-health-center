@@ -1,0 +1,50 @@
+
+.cancel_container {
+    height: 100vh;
+    width:100vw;
+    backdrop-filter: blur(3px);
+}
+
+.cancel_wrapper {
+    background-color: white;
+    box-shadow: 4px 4px 12px var(--widelyUsedGrey);
+    width:65vw;
+    margin: 0 auto;
+    border-radius: .625rem;
+    position: relative;
+    top:30vh;
+}
+.cancel_wrapper>div {
+    display: grid;
+    text-align: center;
+    padding:2rem;
+}
+
+.cancel_ctas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:3rem;
+}
+.cancel_ctas button {
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    border: 0px solid;
+    background-color: var(--primaryColor);
+    color: white;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .cancel_wrapper {
+        width: 20vw;
+        top:25vh;
+    }
+    .cancel_ctas button:hover{
+        background-color: var(--widelyUsedGrey);
+    }
+}

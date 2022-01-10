@@ -10,7 +10,6 @@ const HomeHeader = () => {
     const[open, setOpen] = useState(false) //opening and closing the sidebar
 
 
-    const [user, setUser] = useState({})
 
 
     //should be the name used to login and when the name matches the one in the database, it only display things relating to that name

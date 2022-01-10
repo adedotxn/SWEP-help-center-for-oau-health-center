@@ -8,11 +8,15 @@ import StaffSidebar from "../sidebar";
 import StaffHeader from "../header";
 import StaffAppointmentDetails from "./details";
 import CalenderCard from "./calender_card";
+import Calendar from "react-calendar";
+import 'react-calendar/dist/Calendar.css'
 
 const StaffAppointment = () => {
 
     const date = "November 29, 2021"
-    const [openCard, setCard] = useState(false)
+    const [openCard, setCard] = useState(false);
+
+    const [value, onChange] = useState(new Date())
 
     return ( 
         <div className="appt_container">
@@ -42,6 +46,9 @@ const StaffAppointment = () => {
                     <div className = {openCard ? 'show' : "hide"}>
                         <CalenderCard date = {date} openCard={openCard} setCard={setCard}/>
                     </div>
+
+                    
+                    
                     
 
                     {/* The Appointment Details */}
@@ -54,6 +61,10 @@ const StaffAppointment = () => {
 
                         <div className="calender-box">
 
+                        <Calendar 
+                            onChange={onChange}
+                            value = {value}
+                        />
                         </div>
                     </div>
                 </div>

@@ -1,64 +1,89 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../../Styles/Student/loginpage.css'
+import http from "../../http-config";
+
+const StudentLogin = () => {
 
 
+    const handleLogin = async () => {
+        try {
+            const {data} = await http.post('/student/login', credentials);
+            console.log(data)
 
-function StudentLogin() {
-
-    const login = async () => {
-
+        } catch (error) {
+            console.log(error.response?.data || error.message)
+        }
     }
 
-    const [loginEmail, setLoginEmail] = useState("")
-    const [loginPassword, setLoginPassword] = useState("")
+    const handleMatric = (e) => {
+        setCredentials({...credentials, matricNumber: e.target.value});
+    }
 
-    return (
-        <div className='student_login_container'>
-            
+    const handleHCNumber = (e) => {
+        setCredentials({...credentials, HCNumber: e.target.value});
+    }
+
+    const [credentials, setCredentials] = useState({matricNumber: "", HCNumber: ""})
+
+
+    /*const [studentID, setStudentId] = useState("")
+
+    const handleStudentID = (e) => {
+        setStudentId(e.target.value)
+        console.log(studentID)
+    }*/
+
+    return ( 
+        <div className = "student_login_container">
+
             <div className = "empty-left">
 
             </div>
 
-        
             <div className = "login_wrapper">
                 <header>
-                    <h2>Log in</h2>
+                    <h2>Log In</h2>
                     <p>Please enter the following information</p>
                 </header>
 
                 <form className = "student_login_form">
+                    <label htmlFor="">Matric No</label>
+                    <input type="text" placeholder = "Matric Number" 
+                        value={credentials.matricNumber} 
+                        onChange={handleMatric}    
+                    />
+
+                    <label htmlFor="">Surname</label>
+                    <input type="text" placeholder = "Surname"/>
+
+                    <label htmlFor="">Health Center Number</label>
+                    <input type="text" placeholder = "Health Center Number" 
+                        onChange={handleHCNumber}
+                    />
 
                     <label htmlFor="">Student Email</label>
-                        <input type="text" placeholder = "Student Email"
-                            onChange={(e) => {
-                                setLoginEmail(e.target.value)
-                            }}
-                        />
-                    
-                    <label htmlFor="">Health Center Number</label>
-                        <input type="text" placeholder = "Health Center Number" 
-                            onChange={(e) => {
-                                setLoginPassword(e.target.value)
-                            }}    
-                        />
-
-                    
+                    <input type="text" placeholder = "Student Email"/>
                 </form>
             
                 <footer className="student_login_footer">
-                        <Link className = "link" to = "/home">
-                            <button>
-                                LOG IN
+                    
+                            <button onClick = {handleLogin}>
+                                Log In
                             </button>
-                        </Link>
+                    {/*<Link className = "link" to = "/home"></Link>*/}
 
-                        <h4> Don't have an account  <Link className="signlink" to="/signup"> Sign up</Link>  </h4>
+                    <Link className = "link" to="staff/login">
+                        <span>
+                            or continue as staff
+                        </span>
+                    </Link>
                 </footer>
                 
             </div>
         </div>
-    )
+      
+     );
 }
-
+ 
 export default StudentLogin;

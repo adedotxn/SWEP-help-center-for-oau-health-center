@@ -30,7 +30,7 @@ const StaffLogin = () => {
                         <button> LOG IN </button>
                     </Link> 
 
-                    <Link className="link" to="/student">
+                    <Link className="link" to="studentlogin">
                         <span> or continue as student </span>
                     </Link>
                 </div>

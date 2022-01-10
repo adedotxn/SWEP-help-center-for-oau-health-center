@@ -1,0 +1,50 @@
+
+.reschedule_container {
+    height: 100vh;
+    width:100vw;
+    backdrop-filter: blur(3px);
+}
+
+.reschedule_wrapper {
+    background-color: white;
+    box-shadow: 4px 4px 12px var(--widelyUsedGrey);
+    width:65vw;
+    margin: 0 auto;
+    border-radius: .625rem;
+    position: relative;
+    top:10vh;
+}
+.reschedule_calender {
+    height:3rem;
+}
+.reschedule_wrapper>div {
+    display: grid;
+    text-align: center;
+    padding:2rem;
+}
+
+.reschedule_ctas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:3rem;
+}
+.reschedule_ctas button {
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    border: 0px solid;
+    background-color: var(--primaryColor);
+    color: white;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .reschedule_wrapper {
+        width: 33vw;
+        top:20vh;
+    }
+}
