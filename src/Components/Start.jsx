@@ -16,7 +16,7 @@ const Start = () => {
                 </header>
 
                 
-                <Link className="link" to="student/login">  
+                <Link className="link" to="/signup">  
                     <div className= "go-to">
                         <button className = "student-btn">
                             Continue as student

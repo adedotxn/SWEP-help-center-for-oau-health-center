@@ -3,7 +3,6 @@
 }
 .appt-details {
     display: flex;
-    justify-content: space-between;
     padding: 0 2rem;
     justify-items: center;
 }
@@ -28,8 +27,7 @@
     .appt-details {
         margin-left:3rem;
         width:35vw;
-        border: 2px solid var(--widelyUsedGrey);
-        padding:.5rem;
+        padding:.5rem 5rem;
         border-radius: .625rem;
     }
 }

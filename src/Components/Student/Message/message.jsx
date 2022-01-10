@@ -13,6 +13,12 @@ const StudentMessages = () => {
 
     const doctorName = "[ Doctor's Name ]"
 
+    const [search, setSearch] = useState("")
+    const handleSearch = (e) => {
+        setSearch(e.target.value)
+        console.log(search)
+    }
+
     return ( 
         <div className="student_message_container">
             <div className="student_sidebar">
@@ -63,7 +69,9 @@ const StudentMessages = () => {
 
                                 <div className="message_search">
                                     <div>
-                                        <input type="text" />
+                                        <input type="text" 
+                                            onChange={handleSearch}
+                                        />
                                     </div>
                                 </div>
 

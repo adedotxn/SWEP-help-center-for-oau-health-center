@@ -40,6 +40,16 @@
     color:var(--primaryColor)
 }
 
+.active .home-svg, .inactive:hover .home-svg{
+    stroke: #463157;
+}
+
+.active .appt-svg, .active .msg-svg, 
+.inactive:hover .appt-svg, 
+.inactive:hover .msg-svg {
+    fill:#463157;
+}
+
 .active span, .inactive span{
     font-size: 1.staff-1rem;
     line-height: 14px;

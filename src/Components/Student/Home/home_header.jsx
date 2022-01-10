@@ -5,12 +5,23 @@ import hamburger from '../../../images/hamburger-icon.svg'
 import StudentSidebar from "../sidebar";
 
 
+
 const HomeHeader = () => {
     const[open, setOpen] = useState(false) //opening and closing the sidebar
 
+
+    const [user, setUser] = useState({})
+
+
     //should be the name used to login and when the name matches the one in the database, it only display things relating to that name
-    const studentName = "StudentID" 
+    const studentName = "Student ID"
     const initials = "SI"
+
+    const [search, setSearch] = useState("")
+    const handleSearch = (e) => {
+        setSearch(e.target.value)
+        console.log(search)
+    }
 
     return ( 
         <div className = "headerWS">
@@ -20,7 +31,9 @@ const HomeHeader = () => {
             </div>
 
             <div className="symptom_search">
-                <input type="text" placeholder="Search for a symptom" />
+                <input type="text" placeholder="Search for a symptom"
+                    onChange={handleSearch}
+                />
             </div>
 
             <div className = "dashboard-profile">

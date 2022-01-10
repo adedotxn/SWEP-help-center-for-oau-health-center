@@ -1,18 +1,18 @@
-.login_wrapper {
+.signup_wrapper {
     display: grid;
     place-items: center;
     padding-top:2rem;
 }
- .login_wrapper header {
+ .signup_wrapper header {
      text-align: center;
  }
 
-.student_login_form {
+.student_signup_form {
     display: grid;
     gap: 1rem;
     margin-top:4rem;
 }
-.student_login_form input {
+.student_signup_form input {
     border: 2px solid rgba(224, 224, 224, 1);
     padding: 1.3rem 1rem;;
     background: rgba(252, 248, 248, 1);
@@ -21,14 +21,14 @@
     color: black;
 }
 
-.student_login_footer {
+.student_signup_footer {
     display: grid;
     place-items: center;
     margin-top: 3rem;
     
 }
 
-.student_login_footer button {
+.student_signup_footer button {
     background-color: var(--primaryColor);
     width:80vw;
     color: white;
@@ -37,7 +37,7 @@
     font-size: 1.1rem;;
     margin-bottom: 2rem;;
 }
-.student_login_footer span{
+.student_signup_footer span{
     text-align: center;
     color:var(--primaryColor);
     font-weight: 700;
@@ -57,31 +57,31 @@
         width: 40vw;
         height: 100vh;
     }
-    .student_login_container {
+    .student_signup_container {
         display: flex;
     }
-    .student_login_form {
+    .student_signup_form {
         display: grid;
         gap: 1rem;
         margin-top: -5rem;;
     }
-    .student_login_form input {
+    .student_signup_form input {
         width: 30vw;
         height: 1.4375rem;  
         padding: .7rem 1rem  
     }
-    .student_login_footer {
+    .student_signup_footer {
         display: grid;
         place-items: center;
         margin-top: -2rem;;
         
     }
-    .student_login_footer button {
+    .student_signup_footer button {
         width: 20vw;
-        border-radius: 10px;
+        border-radius: 10px;;
         margin-bottom: 1rem;;
     }
-    .login_wrapper {
+    .signup_wrapper {
         padding-top: 0rem;;
         margin-left:10vw;
     }

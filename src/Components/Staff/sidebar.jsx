@@ -1,11 +1,11 @@
 import React from "react";
 import '../../Styles/Staff/sidebar.css'
 import Close from'../../images/close.svg'
-import dashIcon from'../../images/dashboard-icon.svg'
-import appointmentIcon from '../../images/appointments-icon.svg'
-import messagesIcon from'../../images/messages-icon.svg'
 import logout from '../../images/power.svg'
 import { Link, NavLink} from "react-router-dom";
+import {ReactComponent as HomeIcon} from '../../images/dashboard-icon.svg'
+import {ReactComponent as ApptIcon} from '../../images/appointments-icon.svg'
+import {ReactComponent as MsgIcon} from '../../images/messages-icon.svg'
 
 const StaffSidebar = ({open, setOpen}) => {
     let activeClassName = "active"
@@ -26,8 +26,7 @@ const StaffSidebar = ({open, setOpen}) => {
                             className={({ isActive }) => 
                                 isActive ? activeClassName : inactiveClassName
                             }>
-
-                            <img src={dashIcon} alt="dashboard" />
+                            <HomeIcon className="home-svg" stroke="white"/>
                             <span> Dashboard</span>
                         </NavLink>
 
@@ -37,7 +36,7 @@ const StaffSidebar = ({open, setOpen}) => {
                                 isActive ? activeClassName : inactiveClassName
                             }>
 
-                            <img src={appointmentIcon} alt="appointments" />
+                            <ApptIcon className="appt-svg"  fill="white" />
                             <span> Appointments </span>
                         </NavLink>
 
@@ -47,7 +46,7 @@ const StaffSidebar = ({open, setOpen}) => {
                                 isActive ? activeClassName : inactiveClassName
                             }>
                                 
-                            <img src={messagesIcon} alt="messages" />
+                            <MsgIcon className="msg-svg" fill="white"/>
                             <span> Messages </span>
                         </NavLink>
                       

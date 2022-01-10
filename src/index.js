@@ -15,10 +15,11 @@ import StudentAppointment from './Components/Student/Appointment/appointment';
 import StudentMessages from './Components/Student/Message/message';
 import MobileStudentChat from './Components/Student/Message/mobile_chat';
 import Staff from './Components/Staff/staff';
-import StaffLogin from './Components/Staff/loginpage';
 import Dashboard from './Components/Staff/Dashboard/dashboard';
 import StaffAppointment from './Components/Staff/Appointment/appointment';
 import StaffMessages from './Components/Staff/Messages/messages';
+import StaffLogin from './Components/Staff/loginpage';
+import StudentSignup from './Components/Student/signup-page';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,10 +27,11 @@ ReactDOM.render(
       <Routes>
         <Route path="/"  element={<App />} />
           <Route path="student" element={<Student/>}>
-            <Route path="login" element={<StudentLogin/>}/>
+            
             
           </Route>
-      
+          <Route path="signup" element={<StudentSignup/>}/>
+          <Route path="login" element={<StudentLogin/>} />
           <Route path="home" element={<StudentHome/>}/>
           <Route path="questions" element={<Questions/>} />
           <Route path="positive-feedback" element={<PositiveFeedback/>} />
