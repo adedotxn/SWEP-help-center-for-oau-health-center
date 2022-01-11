@@ -73,7 +73,12 @@
 button {
     cursor: pointer;
 }
-
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
 @media screen and (min-width: 768px) {
     .questions h3 {
         width:40vw;

@@ -1,10 +1,9 @@
 import React from "react";
 import '../../../Styles/Student/prescription.css'
 import Label from '../../../images/prescription.svg'
-import { PrescriptionData } from "../../../data/prescriptiondata";
 import { useNavigate } from "react-router-dom";
 
-const Prescription = () => {
+const Prescription = ({prescription}) => {
     let navigate = useNavigate()
     return (
         <div className="prescription_container">
@@ -14,15 +13,15 @@ const Prescription = () => {
                     <h2>Prescriptions </h2>
 
                     
-                    {PrescriptionData.map((prescription) => (
+                    {prescription.map((prescription) => (
                         <div className="presciption" key={prescription.id}>
                             <div>
                                 <img src={Label} alt="" />
                             </div>
 
                             <div>
-                                <span className="drug">{prescription.drugs}</span>
-                                <span className="dosage"> {prescription.dosage} </span>
+                                <span className="drug">{prescription.title}</span>
+                                <span className="dosage"> {prescription.usage} </span>
                             </div>
                         </div>
                     ))}

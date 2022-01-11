@@ -1,12 +1,11 @@
 import React from "react";
 import '../../../Styles/Student/positive_feedback.css'
 import checkmark from '../../../images/checkmark.svg'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const PositiveFeedback = () => {
+const PositiveFeedback = ({message, description, name, handlePrescription}) => {
     let navigate = useNavigate();
     
-    //const studentMail = "[studentmail]@student.oauife.edu.ng"
     return ( 
         <div className="feedback_container">
             
@@ -18,16 +17,21 @@ const PositiveFeedback = () => {
                     </div>
 
                     <div className="feedback_text">
-                        <p>
-                        Welldone completing the examination. A prescription of drugs has been sent to your email 
-                        If symptoms persist after completing the dosage of the prescribed drugs please meet your doctor.
-                        </p>
+                        {message ? 
+                            <p className="negative"> 
+                                {message} 
+                            </p> : 
+                        <div className="positive">
+                            <p>{name}</p>
+                            <p>{description}</p> 
+                        </div>}
+                        
                     </div>
 
                     <div className="feedback_btn">
-                        <Link  to ="/prescription" className="link"> 
-                            <button className="view_pres"> View Prescription</button>
-                        </Link>
+                        
+                        {message ? <button className="view_pres"> Request a session </button> :
+                        <button className="view_pres" onClick = {handlePrescription}> View Prescription</button>}
 
                         <button className="return" onClick={() => {
                                     navigate("/home")
@@ -36,6 +40,8 @@ const PositiveFeedback = () => {
                         </button>
                     </div>
 
+                   
+                    
                 </div>
             </div>
         </div>

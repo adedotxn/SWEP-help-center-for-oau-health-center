@@ -32,7 +32,7 @@ ReactDOM.render(
           </Route>
           <Route path="studentlogin" element={<StudentLogin/>} />
           <Route path="home" element={<StudentHome/>}/>
-          <Route path="questions" element={<Questions/>} />
+          <Route path="survey/:id" element={<Questions/>} />
           <Route path="positive-feedback" element={<PositiveFeedback/>} />
           <Route path="prescription" element={<Prescription/>} />
           <Route path="appointment" element={<StudentAppointment/>} />

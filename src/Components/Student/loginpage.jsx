@@ -71,7 +71,9 @@ const StudentLogin = () => {
                             <button onClick = {handleLogin}>
                                 Log In
                             </button>
-                    {/*<Link className = "link" to = "/home"></Link>*/}
+                    <Link className = "link" to = "/home">
+                        Logg in
+                        </Link>
 
                     <Link className = "link" to="staff/login">
                         <span>
