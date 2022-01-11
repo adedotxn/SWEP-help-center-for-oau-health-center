@@ -20,25 +20,28 @@ import StaffAppointment from './Components/Staff/Appointment/appointment';
 import StaffMessages from './Components/Staff/Messages/messages';
 import StaffLogin from './Components/Staff/loginpage';
 import StaffSchedule from './Components/Staff/Appointment/schedule';
+import Verifylogin from './Components/Student/verifylogin';
+import ProtectedRoute from './Components/ProtectedRoute';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter> 
       <Routes>
         <Route path="/"  element={<App />} />
-          <Route path="student" element={<Student/>}>
-            
-            
+          <Route path="student">
+            <Route path="verify/:token" element={<Verifylogin />} />
+            <Route path="dashboard" element={ <ProtectedRoute>
+              <StudentHome/>
+            </ProtectedRoute> } />
+            <Route path="login" element={<StudentLogin/>} />
+            <Route index element={<StudentLogin/>} />
           </Route>
-          <Route path="studentlogin" element={<StudentLogin/>} />
-          <Route path="home" element={<StudentHome/>}/>
           <Route path="questions" element={<Questions/>} />
           <Route path="positive-feedback" element={<PositiveFeedback/>} />
           <Route path="prescription" element={<Prescription/>} />
           <Route path="appointment" element={<StudentAppointment/>} />
           <Route path="messages" element={<StudentMessages/>} />
           <Route path="mobile_chat" element={<MobileStudentChat/>} />
-          
           <Route path="staff" element={<Staff/>}>
             
           </Route>
