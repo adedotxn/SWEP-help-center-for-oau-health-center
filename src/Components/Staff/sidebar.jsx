@@ -52,7 +52,7 @@ const StaffSidebar = ({open, setOpen}) => {
                       
                     </div>
 
-                    <Link className  = "link" to = "/">
+                    <Link className="link" to = "/">
                         <div className = "staff-logout-btn">
                             <img src={logout} alt="logout"/>
                             <span>Log out</span>

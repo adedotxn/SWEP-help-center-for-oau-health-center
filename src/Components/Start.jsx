@@ -16,7 +16,7 @@ const Start = () => {
                 </header>
 
                 
-                <Link className="link" to="studentlogin">  
+                <Link className="link" to="/student">  
                     <div className= "go-to">
                         <button className = "student-btn">
                             Continue as student
@@ -24,7 +24,7 @@ const Start = () => {
                     </div>
                 </Link>
 
-                <Link className  = "link" to="stafflogin"> 
+                <Link className  = "link" to="/staff"> 
                     <div className="go-to">
                         <button className = "staff-btn">
                             Continue as staff

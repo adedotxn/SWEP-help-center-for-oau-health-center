@@ -26,11 +26,8 @@ const StaffLogin = () => {
                 </form>
                 
                 <div>
-                    <Link to="/dashboard">
-                        <button> LOG IN </button>
-                    </Link> 
-
-                    <Link className="link" to="studentlogin">
+                    <button> LOG IN </button>
+                    <Link className="link" to="/student">
                         <span> or continue as student </span>
                     </Link>
                 </div>

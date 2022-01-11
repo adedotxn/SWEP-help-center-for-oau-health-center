@@ -7,7 +7,7 @@ const Texts = ({displayMessage, setDisplayMessage }) => {
     return ( 
         <div>
             {studentData.map((patient) => (
-                <Link className="link" to="/staff_chat" key={patient.id}>
+                <Link className="link" to="/staff/chat" key={patient.id}>
                     <div className="mobile_texts" >
                         <div>
                             <span> {patient.studentID} </span>

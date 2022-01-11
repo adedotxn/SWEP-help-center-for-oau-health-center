@@ -40,7 +40,7 @@ const StudentMessages = () => {
                         </div>
                         
                         {/* MOBILE */}
-                        <Link className="link" to="/mobile_chat">
+                        <Link className="link" to="/student/chat">
                             <div className="mobile_content_container">
                                 <div>
                                     {doctorData.map((message)=> (

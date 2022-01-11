@@ -28,7 +28,7 @@ const StudentSidebar = ({open, setOpen}) => {
 
                     <div className = "student-nav-details">
                         <NavLink 
-                            to="/home"
+                            to="/student/dashboard"
                             className={({ isActive }) => 
                                 isActive ? activeClassName : inactiveClassName
                             }>
@@ -38,7 +38,7 @@ const StudentSidebar = ({open, setOpen}) => {
                         </NavLink>
 
                         <NavLink 
-                            to="/appointment"
+                            to="/student/appointment"
                             className={({ isActive }) => 
                                 isActive ? activeClassName : inactiveClassName
                             }>
@@ -48,7 +48,7 @@ const StudentSidebar = ({open, setOpen}) => {
                         </NavLink>
 
                         <NavLink 
-                            to ="/messages"
+                            to ="/student/messages"
                             className={({ isActive }) => 
                                 isActive ? activeClassName : inactiveClassName
                             }>
@@ -57,7 +57,7 @@ const StudentSidebar = ({open, setOpen}) => {
                         </NavLink>
                     </div>
 
-                    <Link className  = "link" to = "/">
+                    <Link className="link" to="/">
                         <div className = "student-logout-btn">
                             <img src={logoutIcon} alt="logout"/>
                             <span>Log out</span>

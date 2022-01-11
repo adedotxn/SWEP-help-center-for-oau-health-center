@@ -36,7 +36,7 @@ const AppointmentDetails = () => {
                                 <span>{date}</span>
                             </div>
 
-                            <Link className="link" to="/student_reshedule">
+                            <Link className="link" to="/student_reschedule">
                                 <div className = "details-icon">
                                     <img src={forwardIcon} alt="appointment details" />
                                 </div>
