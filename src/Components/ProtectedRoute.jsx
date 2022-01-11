@@ -11,7 +11,8 @@ export default function ProtectedRoute ({ children }) {
       return
     }
     setIsLoaded(true)
-  })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <>
