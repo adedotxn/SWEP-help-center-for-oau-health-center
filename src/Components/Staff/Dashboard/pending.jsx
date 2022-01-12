@@ -108,7 +108,7 @@ const Pending = () => {
             <div className = "wrapper appointment-wrapper">
                 <div className = "appointment-card">
                     <div className = "title" onClick = {() => setExpandApp(!expandAppointments)}>
-                        <span>My appointments <h2>adrety</h2></span>
+                        <span>My appointments </span>
 
                         {expandAppointments ?
                             <img src={contract} alt="close" 
