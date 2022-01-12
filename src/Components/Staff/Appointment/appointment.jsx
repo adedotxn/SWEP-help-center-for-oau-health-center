@@ -13,7 +13,14 @@ import 'react-calendar/dist/Calendar.css'
 
 const StaffAppointment = () => {
 
-    const date = "November 29, 2021"
+    const date = new Date();
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    let month = months[date.getMonth()];
+    const year = date.getFullYear()
+    const day = date.getDay();
+
+    const fullDate = month + '/' + day + '/' + year 
+
     const [openCard, setCard] = useState(false);
 
     const [value, onChange] = useState(new Date())
@@ -33,11 +40,9 @@ const StaffAppointment = () => {
                     <div>
                         {/* The calendar bar with the grey bg */}
                         <div className="mobile_calender_bar">
-                            <h3>{date}</h3>
-
-                        
-                            <img src={calenderIcon} alt="calender-icon" 
-                                onClick = {() => setCard(!openCard)}/>
+                            <div className="current-date">
+                                <h3>{fullDate} </h3>
+                            </div>
                         </div>
 
                     </div>
@@ -52,11 +57,11 @@ const StaffAppointment = () => {
                     
 
                     {/* The Appointment Details */}
-                    <StaffAppointmentDetails />
+                    <StaffAppointmentDetails  />
 
                     <div className="desktop_calender_bar">
                         <div className="bar-title">
-                            <h3>[Current Date MM//DD/YY]</h3>
+                            <span> {fullDate} </span>
                         </div>
 
                         <div className="calender-box">

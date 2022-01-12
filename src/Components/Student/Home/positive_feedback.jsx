@@ -30,7 +30,7 @@ const PositiveFeedback = ({message, description, name, handlePrescription}) => {
 
                     <div className="feedback_btn">
                         
-                        {message ? <button className="view_pres"> Request a session </button> :
+                        {message ? <button className="view_pres"> Book an appointment </button> :
                         <button className="view_pres" onClick = {handlePrescription}> View Prescription</button>}
 
                         <button className="return" onClick={() => {

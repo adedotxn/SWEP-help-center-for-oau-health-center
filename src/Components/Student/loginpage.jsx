@@ -26,14 +26,6 @@ const StudentLogin = () => {
 
     const [credentials, setCredentials] = useState({matricNumber: "", HCNumber: ""})
 
-
-    /*const [studentID, setStudentId] = useState("")
-
-    const handleStudentID = (e) => {
-        setStudentId(e.target.value)
-        console.log(studentID)
-    }*/
-
     return ( 
         <div className = "student_login_container">
 
@@ -71,6 +63,7 @@ const StudentLogin = () => {
                             <button onClick = {handleLogin}>
                                 Log In
                             </button>
+
                     <Link className = "link" to="/staff">
                         <span>
                             or continue as staff

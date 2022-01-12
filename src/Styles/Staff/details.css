@@ -2,12 +2,10 @@
     margin-top: 1rem;
 }
 .appt-details {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    justify-items: center;
+    display: grid;
+    place-items: center;
 }
-.appt-details-doctor div  {
+/* .appt-details-doctor div  {
     margin-top:2.5rem;
 }
 .appt-details-doctor span, .student_appt span {
@@ -15,21 +13,67 @@
 }
 .appt-details-student>div {
     margin-top: 1.3rem;
-}
-.student_appt {
+} */
+/* .student_appt {
     display: flex;
     justify-content: flex-end;
 }
 .details-icon {
     margin-top: 1.3rem;;
+} */
+
+.appt-inputs {
+    display: grid;
+    place-items: center;
+    gap:1rem;
+    margin-top:1rem;
+}
+.appt-inputs input {
+    border: 2px solid var(--widelyUsedGrey);
+    border-radius: 5px;
+}
+.id-input {
+    padding: .8rem 2rem;;
+    width: 50vw;
+}
+.date-input {
+    padding:.5rem 1rem;
+    width: 40vw;;
+}
+.time-input {
+    padding: .3rem;
 }
 
+.appt-inputs>button {
+    background-color: var(--primaryColor);
+    border: 0px solid;
+    padding: .8rem 1rem;;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 1rem;;
+    font-weight: 600;
+}
+.appt-inputs label {
+    text-align: left;
+}
 @media screen and (min-width: 768px) {
     .appt-details {
         margin-left:3rem;
-        width:35vw;
+        width:fit-content;
         border: 2px solid var(--widelyUsedGrey);
-        padding:.5rem;
-        border-radius: .625rem;
+        padding:2rem;
+        border-radius: 7px;
+    }
+    .appt-inputs {
+        display: grid;
+        place-items: left;
+    }
+    .id-input {
+        width:20vw;
+    }
+
+    .date-input {
+        width:15vw;
     }
 }

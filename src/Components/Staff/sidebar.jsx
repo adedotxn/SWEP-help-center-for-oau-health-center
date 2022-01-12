@@ -31,7 +31,7 @@ const StaffSidebar = ({open, setOpen}) => {
                         </NavLink>
 
                         <NavLink  
-                            to="/staff_appointment"
+                            to="/staff/appointment"
                             className={({ isActive }) => 
                                 isActive ? activeClassName : inactiveClassName
                             }>
