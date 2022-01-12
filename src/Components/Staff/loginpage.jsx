@@ -4,7 +4,6 @@ import { Link, useParams} from "react-router-dom";
 import http from "../../http-config";
 
 const StaffLogin = () => {
-
     const [credentials, setCredentials] = useState({staffID: ""});
 
     const handleLogin = async () => {
@@ -52,12 +51,10 @@ const StaffLogin = () => {
                 </form>
                 
                 <div>
-                    {/* <Link to={`verify/${token}`}>
+                    <Link to={`verify/${token}`}>
                         <button onClick={handleLogin}> LOG IN </button>
-                    </Link> */}
-                    <Link to="/staff/dashboard"> 
-                        <button>logg in</button>
                     </Link>
+                    
                     <Link className="link" to="/student">
                         <span> or continue as student </span>
                     </Link>
