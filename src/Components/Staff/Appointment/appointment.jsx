@@ -2,7 +2,6 @@ import React, { useState } from "react";
 //import { doctorData } from "../../../data/doctordata";
 //import { studentData } from "../../../data/studentdata";
 //import forward//Icon from '../../..///images/forward.svg'
-import calenderIcon from '../../../images/calender-icon.svg'
 import '../../../Styles/Staff/appointment.css'
 import StaffSidebar from "../sidebar";
 import StaffHeader from "../header";

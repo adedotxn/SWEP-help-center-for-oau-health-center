@@ -1,7 +1,6 @@
 import React from "react";
 
 import '../../../Styles/Staff/details.css'
-import { Link } from "react-router-dom";
 import http from "../../../http-config";
 import { useState } from "react";
 //import { useState } from "react";
