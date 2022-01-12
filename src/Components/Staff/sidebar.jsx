@@ -22,7 +22,7 @@ const StaffSidebar = ({open, setOpen}) => {
 
                     <div className = "staff-nav-details">
                         <NavLink  
-                            to="/dashboard"
+                            to="/staff/dashboard"
                             className={({ isActive }) => 
                                 isActive ? activeClassName : inactiveClassName
                             }>
@@ -41,7 +41,7 @@ const StaffSidebar = ({open, setOpen}) => {
                         </NavLink>
 
                         <NavLink  
-                            to ="/staff_messages"
+                            to ="/staff/messages"
                             className={({ isActive }) => 
                                 isActive ? activeClassName : inactiveClassName
                             }>

@@ -52,9 +52,12 @@ const StaffLogin = () => {
                 </form>
                 
                 <div>
-                    <Link to={`verify/${token}`}>
+                    {/* <Link to={`verify/${token}`}>
                         <button onClick={handleLogin}> LOG IN </button>
-                    </Link> 
+                    </Link> */}
+                    <Link to="/staff/dashboard"> 
+                        <button>logg in</button>
+                    </Link>
                     <Link className="link" to="/student">
                         <span> or continue as student </span>
                     </Link>
